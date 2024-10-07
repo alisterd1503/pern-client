@@ -9,7 +9,7 @@ const InputName = () => {
         e.preventDefault()
         try {
             const body = { name }
-            const response = await fetch("http://localhost:5001/addName", {
+            const response = await fetch("https://pernproject-50c50a3581c8.herokuapp.com/addName", {
                 method: "POST",
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify(body)

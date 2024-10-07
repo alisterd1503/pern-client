@@ -6,7 +6,7 @@ const ListNames = () => {
 
     const getNames = async () => {
         try {
-            const response = await fetch("http://localhost:5001/getNames")
+            const response = await fetch("https://pernproject-50c50a3581c8.herokuapp.com/getNames");
             const jsonData = await response.json();
             setNames(jsonData)
         } catch (err) {
